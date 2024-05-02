@@ -18,7 +18,7 @@ To clone this project from GitHub, follow these steps:
 git clone https://github.com/ArturPoltser/py-scrape-and-analisys-of-real-estate-market.git
 cd py-scrape-and-analisys-of-real-estate-market
 python -m venv venv
-venv\Scripts\activate  #for MacOS/Linux use: source vevn/bin/activate
+venv\Scripts\activate  #for MacOS/Linux use: source venv/bin/activate
 ```
 
 4. **Install requirements:**
@@ -32,12 +32,8 @@ pip install -r requirements.txt
 scrapy crawl real_estate_spider -O real_estate.csv
 ```
 
-6. **Run the Analysis Script:**
-```shell
-python real_estate_analysis/analysis.ipynb
-```
+## Files Structure
 
-7. **Run the Machine Learning Script:**
-```shell
-python machine_learning/ml_model.ipynb
-```
+- `real_estate_scraper/spiders/real_estate_spider.py`: File that contains all main logic for scraping data.
+- `real_estate_analysis/analysis.ipynb`: Jupyter Notebook file containing the analysis of data.
+- `machine_learning/ml_model.ipynb`: Jupyter Notebook file containing the machine learning model for data.
