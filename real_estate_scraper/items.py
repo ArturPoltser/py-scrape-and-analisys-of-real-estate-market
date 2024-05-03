@@ -16,3 +16,9 @@ class RealEstate:
     number_of_rooms: int
     renovation: str
     publication_date: datetime
+
+
+@dataclass
+class RealEstateML:
+    name: str
+    statistic: dict
