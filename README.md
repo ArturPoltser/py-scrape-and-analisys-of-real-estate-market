@@ -28,12 +28,19 @@ pip install -r requirements.txt
 ```
 
 5. **Run the Web Scraping Script:**
+
+For analysis:
 ```shell
 scrapy crawl real_estate_spider -O real_estate.csv
+```
+For machine learning:
+```shell
+scrapy crawl spider_for_ml -O real_estate_for_ML.json
 ```
 
 ## Files Structure
 
-- `real_estate_scraper/spiders/real_estate_spider.py`: File that contains all main logic for scraping data.
+- `real_estate_scraper/spiders/real_estate_spider.py`: File that contains all main logic for scraping data for Statistical Analysis.
+- `real_estate_scraper/spiders/spider_for_ml.py`: File that contains all main logic for scraping data for Machine Learning.
 - `real_estate_analysis/analysis.ipynb`: Jupyter Notebook file containing the analysis of data.
-- `machine_learning/ml_model.ipynb`: Jupyter Notebook file containing the machine learning model for data.
+- `machine_learning/ml_model.ipynb`: Jupyter Notebook file containing the machine learning model for price predictions.
